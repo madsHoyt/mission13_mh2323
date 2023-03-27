@@ -1,0 +1,8 @@
+.navigation {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.navigation:hover {
+  color: hotpink;
+}

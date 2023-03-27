@@ -1,0 +1,16 @@
+/* my css */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  margin-top: 0;
+  text-align: center;
+  padding: 150px 0;
+}
+
+.headerStyle {
+  background-image: url("Joel.jpg");
+  background-position: center;
+}

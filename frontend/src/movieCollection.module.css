@@ -1,0 +1,32 @@
+/* my css */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  margin-top: 0;
+  text-align: center;
+  padding: 150px 0;
+}
+
+.headerStyle {
+  background-color: rgb(250, 52, 151);
+}
+
+.btnpink {
+  background-color: hotpink;
+  text-align: center;
+  outline-color: rgb(241, 41, 141);
+  color: white;
+  font-size: larger;
+}
+.btnpink:hover {
+  background-color: rgb(241, 41, 141);
+  text-align: center;
+  color: rgb(240, 239, 239);
+}
+
+.center {
+  text-align: center;
+}
