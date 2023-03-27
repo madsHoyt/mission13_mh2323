@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "./nav.module.css";
 import classNames from "classnames";
 
