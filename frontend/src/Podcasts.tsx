@@ -1,6 +1,7 @@
 import classNames from "classnames";
 import styles from "./podcasts.module.css";
 import { Link } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function Podcasts() {
   document.title = "My Podcasts";

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import styles from "./nav.module.css";
 import classNames from "classnames";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 //Navigation
 function Nav(props: any) {
