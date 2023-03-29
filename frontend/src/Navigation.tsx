@@ -53,37 +53,3 @@ function Nav(props: any) {
 }
 
 export default Nav;
-
-/* export default Nav;
-//Navigation
-function Nav(props: any) {
-  return (
-    <nav className="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark border-bottom box-shadow mb-3">
-      <div className="container-fluid">
-        <div className="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-          <ul
-            className={classNames("navbar-nav flex-grow-1", styles.navigation)}
-          >
-            <li className="nav-item">
-              <Link to="/" className={styles.navigation}>
-                Home
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/podcasts" className={styles.navigation}>
-                My Podcasts
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/movies" className={styles.navigation}>
-                Movies
-              </Link>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  );
-}
-
-export default Nav; */

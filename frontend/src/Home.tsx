@@ -1,5 +1,6 @@
 import classNames from "classnames";
 import styles from "./home.module.css";
+import photo from "./Joel.jpg";
 
 function Home() {
   document.title = "Home - Joel Hilton's Film Collection";
@@ -10,7 +11,11 @@ function Home() {
           "masthead text-white text-center",
           styles.headerStyle
         )}
-        style={{ lineHeight: "70px" }}
+        style={{
+          lineHeight: "70px",
+          backgroundImage: `url(${photo})`,
+          backgroundPosition: "center",
+        }}
       >
         <div className="container d-flex align-items-center flex-column">
           {/* Heading */}
