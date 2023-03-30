@@ -6,8 +6,8 @@ import data from "./MovieData.json";
 
 const mds = data.MovieData;
 
-function MovieCollection() {
-  document.title = "Movie Collection";
+function MovieCollection(props: any) {
+  document.title = props.saying;
   //want multiline
   const [listOMovies] = useState(mds);
 

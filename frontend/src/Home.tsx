@@ -2,8 +2,8 @@ import classNames from "classnames";
 import styles from "./home.module.css";
 import photo from "./Joel.jpg";
 
-function Home() {
-  document.title = "Home - Joel Hilton's Film Collection";
+function Home(props: any) {
+  document.title = props.saying;
   return (
     <>
       <header

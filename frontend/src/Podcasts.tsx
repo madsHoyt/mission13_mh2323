@@ -3,8 +3,8 @@ import styles from "./podcasts.module.css";
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-function Podcasts() {
-  document.title = "My Podcasts";
+function Podcasts(props: any) {
+  document.title = props.saying;
   return (
     <>
       <header
