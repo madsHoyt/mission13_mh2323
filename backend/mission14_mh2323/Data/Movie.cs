@@ -6,7 +6,6 @@ namespace mission14_mh2323.data
 {
     public partial class Movie
     {
-        //form inputs
         [Key]
         [Required]
         public int MovieId { get; set; }

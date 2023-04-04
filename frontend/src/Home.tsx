@@ -2,6 +2,7 @@ import classNames from "classnames";
 import styles from "./home.module.css";
 import photo from "./Joel.jpg";
 
+//Landing Page
 function Home(props: any) {
   document.title = props.saying;
   return (

@@ -7,7 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 /* 
   Note: installed "react-router-dom" to do the navigation (npm install react-router-dom)
   Author: Madison Hoyt
-  Description: an app that displays a list of movies and includes navigation to other pages
+  Description: an app that displays a list of movies using an api and includes navigation to other pages
  */
 function App() {
   return (

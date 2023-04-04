@@ -4,6 +4,7 @@ import classNames from "classnames";
 import { useEffect, useState } from "react";
 import { movie } from "../types/movie";
 
+// Print out movies by calling api
 function MovieCollection(props: any) {
   document.title = props.saying;
   //want multiline
