@@ -1,15 +1,22 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "./movieCollection.module.css";
 import classNames from "classnames";
-import { useState } from "react";
-import data from "./MovieData.json";
-
-const mds = data.MovieData;
+import { useEffect, useState } from "react";
+import { movie } from "../types/movie";
 
 function MovieCollection(props: any) {
   document.title = props.saying;
   //want multiline
-  const [listOMovies] = useState(mds);
+  const [listOMovies, setMovieData] = useState<movie[]>([]);
+  useEffect(() => {
+    const fetchMovie = async () => {
+      const rsp = await fetch("https://localhost:4000/movie");
+      const temp = await rsp.json();
+      setMovieData(temp);
+    };
+
+    fetchMovie();
+  }, []);
 
   return (
     <>
@@ -47,17 +54,20 @@ function MovieCollection(props: any) {
                 </tr>
               </thead>
               <tbody>
-                {listOMovies.map((m) => (
-                  // <tr key={m.MovieId}>
-                  <tr>
-                    <td>{m.Title}</td>
-                    <td>{m.Year}</td>
-                    <td>{m.Director}</td>
-                    <td>{m.Rating}</td>
-                    <td>{m.Category}</td>
-                    <td>{m.Edited}</td>
-                  </tr>
-                ))}
+                {listOMovies
+                  .filter((m) => m.edited === "Yes")
+                  .sort((a, b) => a.title.localeCompare(b.title))
+                  .map((m) => (
+                    // <tr key={m.MovieId}>
+                    <tr>
+                      <td>{m.title}</td>
+                      <td>{m.year}</td>
+                      <td>{m.director}</td>
+                      <td>{m.rating}</td>
+                      <td>{m.category}</td>
+                      <td>{m.edited}</td>
+                    </tr>
+                  ))}
               </tbody>
             </table>
           </div>

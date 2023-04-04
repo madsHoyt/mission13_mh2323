@@ -2,7 +2,7 @@ import "./App.css";
 import Nav from "./Navigation";
 import Home from "./Home";
 import Podcasts from "./Podcasts";
-import MovieCollection from "./MovieCollection";
+import MovieCollection from "./movie/MovieCollection";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 /* 
   Note: installed "react-router-dom" to do the navigation (npm install react-router-dom)
