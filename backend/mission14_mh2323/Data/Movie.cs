@@ -15,6 +15,8 @@ namespace mission14_mh2323.data
         public string? Category { get; set; }
         public string? Rating { get; set; }
         public string? Edited { get; set; }
+        public string? LentTo { get; set; }
+        public string? Notes { get; set; }
        
     }
 }
